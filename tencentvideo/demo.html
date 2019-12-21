@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .jiemian {
+            width: 90vw;
+            /* height: 100vh; */
+            /* background-color: #9e9e9e; */
+            margin: 0 auto;
+
+        }
+
+        .bottom {
+            display: flex;
+           
+            width: 100%;
+            position: fixed;
+            bottom: 0px;
+            text-align: center;
+            background-color: white;
+            padding-top: 5px;
+        }
+        .bottom_ {
+            flex: 1;
+        }
+        .bottom>div>img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .bottom p {
+            margin-top: 5px;
+            font-size: 12px;
+            color: rgba(166, 166, 166, 1);
+        }
+
+        .top {
+            width: 100%;
+            height: 9.5vh;
+            text-align: center;
+            font-size: 17px;
+            font-weight: bold;
+            /* background-color: black; */
+        }
+
+        .input>input {
+            border: none;
+            color: rgba(166, 166, 166, 1);
+            width: 100%;
+            position: absolute;
+            top: 3px;
+        }
+
+        .input {
+            width: 90%;
+            position: relative;
+        }
+
+        .input>img {
+            width: 22px;
+            height: 22px;
+            padding-left: 10px;
+        }
+
+        .xuan img {
+            width: 90vw;
+            height: 23vh;
+            text-align: center;
+        }
+
+        .shu {
+            margin: 5% 0 5% 5%;
+            font-weight: bold;
+            width: 90vw;
+            /* height: 100vw; */
+
+        }
+
+        .shuzi {
+            font-size: 1em;
+        }
+
+        .dazi {
+            font-size: 0.9em;
+        }
+
+        .xiaozi {
+            font-size: 0.7em;
+            color: rgba(166, 166, 166, 1);
+        }
+
+        .one_tuia img {
+            width: 40vw;
+            height: 15vh;
+
+        }
+
+        .one_tuia {
+            display: inline-block;
+            vertical-align: bottom;
+            padding-top: 2vh;
+            margin-right: 0.8vh;
+        }
+
+        .space {
+            width: 90vw;
+            border: 2px solid #9e9e9e;
+            height: 2px;
+        }
+        .hot_vid {
+            background-color: black;
+            height: 100vh;
+            width: 100%;
+        }
+        .vie_vid {
+            background-color: blue;
+            height: 100vh;
+            width: 100%;
+        }
+        .mine {
+            background-color: red;
+            height: 100vh;
+            width: 100%;
+        }
+        .app>div {
+            display: none;
+            width: 90vw;
+            margin: 0 auto;
+        }
+        .app>div:nth-child(1) {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <div class="jiemian">
+            <div class="top">
+                <p>腾讯视频</p>
+            </div>
+            <div class="input">
+                <img src="./images/图标 5.svg" alt="">
+                <input type="text" placeholder="请输入片名，导演或主演">
+            </div>
+            <div class="xuan" style="text-align: center;">
+                <a href=""><img src="./images/图片 2.jpg" alt=""></a>
+                <span>
+                    <p>【猎毒人】 吕云鹏计划通楚天南中风下线？</p>
+                </span>
+            </div>
+            <div class="shu">
+                <p class="shuzi">暑假刷剧看这里！</p>
+                <div class="shu_ju">
+
+                </div>
+            </div>
+            <div class="space"></div>
+
+        </div>
+        <div class="hot_vid">
+
+        </div>
+        <div class="vie_vid">
+
+        </div>
+        <div class="mine"></div>
+    
+        
+    </div>
+    <div class="bottom">
+        <div class="bottom_">
+            <img src="./images/44_a.png" alt="">
+            <p>首页</p>
+        </div>
+        <div class="bottom_">
+            <img src="./images/41.png" alt="">
+            <p>短视频</p>
+        </div>
+        <div class="bottom_">
+            <img src="./images/42.png" alt="">
+            <p>频道</p>
+        </div>
+        <div class="bottom_">
+            <img src="./images/43.png" alt="">
+            <p>我的</p>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.4.1.min.js "></script>
+<script src="./js/data.js"></script>
+<script>
+    // 遍历数据 做界面
+    var content_str = ""
+    for (var i = 0; i < shu_one.length; i++) {
+        var one_data = shu_one[i]
+
+        content_str += `
+                <div class="one_tuia">
+                <img src="./images/` + one_data.img + `" alt="">
+                <p class="dazi">` + one_data.name + `</p>
+                <p class="xiaozi">` + one_data.jie + `</p>
+                </div>
+        `
+    }
+    $(".shu_ju").append($(content_str))
+//     // 内容区域的高度
+// var screen_h = window.screen.height
+// var screen_w = window.screen.width
+
+// $(".jiemian").css({
+//     "height": screen_h - $(".bottom").outerHeight() + "px"
+// })
+
+//底部点击
+$(".bottom_").click(function(){
+    var that = this
+    var cli_index = $(this).index()
+    $(".bottom_").each(function(index , item) {
+        if(cli_index == index) {
+            var cur_src = $(item).find("img").attr("src")
+            if(cur_src.indexOf("_a") == -1) {
+                $(item).find("img").attr("src" , cur_src.replace(".png" , "_a.png"))
+            }
+        }else {
+                var cur_src = $(item).find("img").attr("src")
+                $(item).find("img").attr("src" , cur_src.replace("_a" , "" ))
+            }
+    })
+    $(".app>div").each(function(index , item) {
+        if($(that).index() == index) {
+            $(item).css({
+                "display" : "block"
+            })
+        } else {
+            $(item).css ({
+                "display" : "none"
+            })
+        }
+    })
+})
+</script>
+
+</html>
