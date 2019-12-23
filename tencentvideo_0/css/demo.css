@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bao {
+    height: 100vh;
+    width: 100vw;
+}
+
+.jiemian , .vie_vid , .hot_vid , .mine{
+    width: 90vw;
+    margin: 0 auto;
+    overflow: scroll;
+    height: 90vh;
+
+}
+
+.bottom {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    background-color: white;
+    padding-top: 5px;
+}
+
+.bottom_ {
+    flex: 1;
+}
+
+.bottom>div>img {
+    width: 5vw;
+    height: 3vh;
+}
+
+.bottom p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: rgba(166, 166, 166, 1);
+}
+
+.top {
+    width: 100%;
+    height: 4.5vh;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 1vh;
+}
+
+.input>input {
+    border: none;
+    color: rgba(166, 166, 166, 1);
+    width: 90%;
+    position: absolute;
+    top: 3px;
+}
+
+.input {
+    width: 90vw;
+    position: relative;
+    left: 5vw;
+}
+
+.input>img {
+    width: 22px;
+    height: 22px;
+    padding-left: 10px;
+}
+
+.xuan img {
+    width: 80vw;
+    height: 23vh;
+    text-align: center;
+}
+
+.shu {
+    margin: 5% 0 5% 5%;
+    width: 100vw;
+}
+
+.shuzi {
+    font-size: 1em;
+    font-weight: bold;
+    padding-bottom: 3vh;
+}
+
+.dazi {
+    font-size: 0.9em;
+}
+
+.xiaozi {
+    font-size: 0.7em;
+    color: rgba(166, 166, 166, 1);
+}
+
+.one_tuia img {
+    width: 40vw;
+    height: 15vh;
+}
+
+.one_tuia {
+    display: inline-block;
+    vertical-align: bottom;
+
+    margin-right: 0.8vh;
+}
+
+.space {
+    width: 80vw;
+    height: 0.2vh;
+    background-color: rgba(153, 153, 153, 0.2);
+    margin: 0 auto;
+}
+.app>div {
+    display: none;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.app>div:nth-child(3) {
+    display: block;
+}
+
+.spac img {
+    width: 2vw;
+    height: 1.5vh;
+}
+
+.spac{
+    text-align: center;
+    font-size: 0.8em;
+    color: rgba(166, 166, 166, 1);
+    padding-top: 1vh;
+}
+
+.new img {
+    width: 44vw;
+    height: 15vh;
+}
+
+.new {
+    width: 44vw;
+    display: inline-block;
+}
+
+.new p {
+    height: 5vh;
+    width: 44vw;
+    font-size: 0.8em;
+    word-wrap: break-word;
+}
+
+.tom_img {
+    white-space: nowrap;
+    display: inline-block;
+}
+.tom_img img {
+    width: 30vw;
+}
+.tomo {
+    width: 90vw ;
+    overflow-x: scroll;
+    display: flex;
+    font-size: 0.5em;
+}
+.tomorrow {
+    width: 100%;
+}
+.htop {
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bolder;
+    padding-top: 1vh;
+}
+.hot_vid {
+    width: 7vw;
+    overflow: scroll;
+    height: 90vh;
+    position: relative;
+}
+.h_list {
+    width: 90vw;
+    overflow: scroll;
+    white-space: nowrap;
+    height: 4vh;
+    padding-top: 2vh;
+}
+.h_list>span {
+    margin-right: 5vw;
+    font-weight: bolder;
+    display: inline-block;
+}
+.h_list>:nth-child(1) {
+    color: rgba(255, 141, 26, 1);
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255, 141, 26, 1);
+}
+.w_a , .w_xia , .tui{
+    width: 100%;
+    padding-top: 2vh;
+}
+.w_shang>img {
+    width: 90vw;
+    filter:brightness(50%);
+}
+.w_xia>img {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+}
+.w_xiaa img {
+    width: 5vw;
+}
+.w_xiaa {
+    float: right;
+}
+.w_xia div{
+    display: inline-block;
+}
+.aa {
+    height: 3vh;
+    width: 22vw;
+    border-radius: 20px;
+    background-color: rgba(166, 166, 166, 0.3);
+    text-align: center;
+    line-height: 3vh;
+}
+.w_shang {
+    position: relative;
+}
+.w_shang>span {
+    position: absolute;
+    display: inline-block;
+    left: 3vw;
+    color: white;
+    font-weight: bolder;
+    top: 1vh;
+}
+.vie_r img {
+    width: 5vw;  
+}
+.vie_r {
+    float: right;
+    line-height: 4vh;
+}
+.vie_next span {
+    background-color: rgba(210, 210, 210, 0.5);
+    color: rgba(128, 128, 128, 1);
+    border-radius: 10px;
+    width: 21vw;
+    height: 3.5vh;
+    display: inline-block;
+    text-align: center;
+    line-height: 3.5vh;
+    margin-top: 1vh;
+    font-size: 0.7em;
+}
+.aa {
+    font-size: 0.8em;
+}
+.hot_ju ,.EA_ju{
+    padding-top: 4vh;
+}
+.hot_a img  ,.em_ju>img{
+    width: 44vw;
+    height: 15vh;
+}
+.hot_a ,.em_ju{
+    width: 44vw;
+    height: 15vh;
+    display: inline-block;
+    font-size: 0.9em;
+}
+.vie_vid {
+    width: 90vw;
+    height: 90vh;
+    overflow:scroll;
+}
+.word {
+    text-align: center;
+    width: 90vw;
+    /* height: 0vh; */
+}
+.word>img{
+    width: 90vw;
+    height: 30vh;
+
+}
+
+
+
+
+
