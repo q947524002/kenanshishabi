@@ -11,7 +11,8 @@
 .jiemian , .vie_vid , .hot_vid , .mine{
     width: 90vw;
     margin: 0 auto;
-    overflow: scroll;
+    overflow: hidden;
+    overflow-y: scroll;
     height: 90vh;
 
 }
@@ -116,11 +117,11 @@
 }
 .app>div {
     display: none;
-    width: 90vw;
+    width:90vw;
     margin: 0 auto;
 }
 
-.app>div:nth-child(3) {
+.app>div:nth-child(1) {
     display: block;
 }
 
@@ -156,6 +157,7 @@
 .tom_img {
     white-space: nowrap;
     display: inline-block;
+    width: 30vw;
 }
 .tom_img img {
     width: 30vw;
@@ -200,7 +202,7 @@
     padding-bottom: 5px;
     border-bottom: 2px solid rgba(255, 141, 26, 1);
 }
-.w_a , .w_xia , .tui{
+.w_a , .w_xia , .tui ,.vip{
     width: 100%;
     padding-top: 2vh;
 }
@@ -216,8 +218,9 @@
 .w_xiaa img {
     width: 5vw;
 }
-.w_xiaa {
+.w_xiaa ,.vip_a{
     float: right;
+    padding-top: 0.6vh;
 }
 .w_xia div{
     display: inline-block;
@@ -263,7 +266,7 @@
 .aa {
     font-size: 0.8em;
 }
-.hot_ju ,.EA_ju{
+.hot_ju ,.EA_ju , .history{
     padding-top: 4vh;
 }
 .hot_a img  ,.em_ju>img{
@@ -281,16 +284,56 @@
     height: 90vh;
     overflow:scroll;
 }
-.word {
+.word ,.mine_t{
     text-align: center;
     width: 90vw;
-    /* height: 0vh; */
+    padding-top: 3vh;
 }
 .word>img{
     width: 90vw;
     height: 30vh;
 
 }
+.mine_t> img {
+    width: 20vw;
+    border-radius: 50%;
+}
+.mine_t>p {
+    font-weight: bolder;
+}
+.spa ,.sp{
+    width: 90vw;
+    height: 0.1vh;
+    background-color: rgba(153, 153, 153, 0.2);
+    margin-top: 3vh;
+}
+.vip>img {
+    width: 5vw;
+}
+.vip_a>img {
+    width: 5vw;
+}
+.lo_his {
+    width: 90vw;
+    overflow-x: scroll;
+    white-space: nowrap;
+    height: 14.4vh;
+}
+.lo_his img {
+    width: 40vw;
+    height: 10vh;
+
+}
+.his_list {
+    width: 40vw;
+    display: inline-block;
+    height: 10vh;
+}
+.look_list {
+    height: 6vh;
+    padding-top: 6vh;
+}
+
 
 
 

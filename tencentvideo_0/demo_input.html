@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        .warp {
+            width: 100vw;
+            height: 100vh;
+        }
+        .top {
+            overflow: hidden;
+            width: 100%;
+            height: 5vh;
+            text-align: center;
+            font-weight: bold;
+        }
+        .inpu img {
+            width: 7vw;
+            vertical-align: bottom;
+        }
+        .inpu input{
+            width: 70vw;
+            margin: 0 auto;
+            height: 4vh;
+            padding-left: 7vw;
+            background-color: rgba(166, 166, 166, 0.1);
+            border-style: none;
+            font-size: 0.8em;
+        }
+        .descend {
+            height: 5vh;
+            float: right;
+            font-size: 0.8em;
+            color: rgba(255, 141, 26, 1);
+            vertical-align: middle;
+            line-height: 5vh;
+        }
+        .inpu {
+            position: relative;
+            width: 90vw;
+            padding-left: 4vw;
+        }
+        .inpu>img {
+            position: absolute;
+        }
+        .space {
+            width: 95vw;
+            height: 1px;
+            background-color: rgba(153, 153, 153, 0.2);
+            margin: 0 auto;
+            margin-top: 2vh;
+        }
+        .img {
+            float: right;
+        }
+        .img img {
+            width: 5vw;
+            vertical-align: bottom;
+        }
+        .history{
+            padding: 2vh;
+            font-size: 0.6em;
+            color: rgba(166, 166, 166, 1);
+        }
+        .tomo {
+            background-color: rgba(166, 166, 166, 0.1);
+            width: 45vw;
+            height: 4vh;
+            border-radius: 3px;
+            font-size: 0.8em;
+            text-align: center;
+            line-height: 4vh;
+            color: rgba(80, 80, 80, 1);
+            margin-top: 2vh;
+        }
+        .hist {
+            padding-top: 2vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="warp">
+        <div class="top">腾讯视频</div>
+        <div class="inpu">
+            <img src="./images/图标 41.svg" alt="">
+            <input type="text" placeholder="请输入片名、主要或导演">
+            <div class="descend">
+                <span>取消</span>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="history">
+            <span>历史搜索</span>
+            <div class="img">
+                <img src="./images/图片 71.png" alt="">
+            </div>
+            <div class="tomo">明日之子</div>
+            <div class="hist">历史搜索</div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script>
+    $(".descend").click(function(){
+        location.href="demo.html"
+    })
+</script>
+</html>

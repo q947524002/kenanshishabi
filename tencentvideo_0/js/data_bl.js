@@ -129,3 +129,20 @@ for (var i = 0; i < shu_six.length; i++) {
 }
 $(".EAju").append($(EM_jua))
 
+
+
+var ory = ""
+for (var i = 0; i < shu_seven.length; i++) {
+    var seven_data = shu_seven[i]
+
+    ory += `
+        
+    <span class="his_list">
+            <img src="./images/` + seven_data.img + `" alt="">
+            
+            <p>` + seven_data.name + `</p>
+        </span>
+         
+    `
+}
+$(".lo_his").append($(ory))
